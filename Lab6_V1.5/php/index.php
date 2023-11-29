@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Jakub Wróblewski" />
+    <title>Największe mosty świata</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <ul>
+        
+        <a href="index.html">
+        <li id="aa"><img src="home_picture.png" alt="Pictyre to home page" id="glowna"></li>
+        </a>
+        <b>
+        <li><a href="polska.html">Polska</a></li>
+        <li><a href="niemcy.html">Niemcy</a></li>
+        <li><a href="stany_zjednoczone.html">Stany Zjednoczone</a></li>
+        <li><a href="arabia_saudyjska.html">Arabia Saudyjska</a></li>
+        <li><a href="anglia.html">Anglia</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        </b>
+    </ul>
+    <div id="main_block">
+    <h1 id="main_title">Witaj na mojej stronie</h1>
+    <p id="main_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend diam
+        faucibus ante dictum ornare. Sed elit nunc, ornare et gravida vitae, viverra sagittis nibh.
+        Nunc et posuere quam. Phasellus pretium nunc mi, vitae fringilla eros mattis non.
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Aliquam finibus mollis massa et posuere. Aenean ante justo, facilisis id vehicula in, malesuada eu lectus.
+        Mauris quam risus, fermentum in dolor sed, pellentesque bibendum massa. Integer eu 
+        imperdiet lacus. Vestibulum eu dolor a tellus venenatis consequat non sed arcu.
+        Suspendisse non urna auctor, ornare nisl nec, fringilla magna. Praesent id dui
+        vel risus vehicula imperdiet non a orci. Nulla lacinia, lectus quis feugiat rhoncus,
+        est elit vulputate odio, eget tristique ex dui at dolor. Cras venenatis interdum leo
+        ac semper. Quisque pulvinar ornare magna a mattis. Quisque convallis posuere turpis.
+        Suspendisse pharetra aliquam justo nec posuere. Class aptent taciti sociosqu ad litora
+        torquent per conubia nostra, per inceptos himenaeos.     
+        Duis eleifend nisl quis sem auctor faucibus. Morbi ullamcorper porta libero quis efficitur.
+        Aliquam eget nisl id felis ultricies malesuada. Sed vitae mauris in libero pulvinar consectetur
+        vel ut justo. Duis eu urna ac lacus varius euismod eu a nulla. Praesent augue ligula, pharetra
+        id orci sit amet, condimentum rhoncus est. In in lobortis eros. Integer laoreet ut enim at egestas.
+        Sed egestas dui eu tortor auctor accumsan. Nam placerat a libero eu vulputate. Morbi libero sem,
+        sollicitudin ac semper ut, iaculis vitae odio. Quisque sodales ultricies massa, non fermentum sapien.
+        Duis vitae odio at justo egestas pellentesque.       
+        Mauris sed mollis magna, auctor tristique augue. Donec vehicula ligula vel interdum laoreet.
+        Duis at orci eget quam mollis suscipit a condimentum sem. Etiam quam arcu, efficitur ut imperdiet quis,
+        euismod nec arcu. Nullam tellus est, tincidunt ac interdum a, tincidunt eu mi. Sed lobortis mauris
+        id tellus cursus scelerisque. Nam porttitor, magna ut volutpat varius, tortor quam consectetur lacus,
+        a sodales orci mi at eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+        per inceptos himenaeos. Ut iaculis faucibus mauris at suscipit. Proin risus massa,
+        pulvinar quis facilisis vitae, dictum vitae diam. Etiam ac tincidunt neque. Maecenas ac fringilla nibh.        
+        Suspendisse eu nunc non felis posuere faucibus ac sit amet turpis. Duis id bibendum orci.
+        Phasellus lobortis quam nisi, ut blandit libero faucibus nec. Ut imperdiet fringilla sodales.
+        Aenean id suscipit lacus. Fusce non auctor diam, ullamcorper vestibulum dui.
+        Nam dictum lorem non nulla consectetur fermentum. Pellentesque ultricies eros vel diam congue,
+        eget condimentum ipsum accumsan. Fusce luctus vestibulum tempor.</p>
+        </div>
+
+        <div id="animacjaTestowa1" class="test-block1">Miło mi Cię gościć na mojej stronie</div>
+
+
+        <script>
+
+            $("#animacjaTestowa1").on("click", function(){
+                $(this).animate({
+                    width: "750px",
+                    opacity: 0.4,
+                    fontSize: "3em",
+                    borderWidth: "10px"
+                },1500);
+            });
+
+
+        </script>
+        <?php
+            echo 'Cześć ' . htmlspecialchars($_GET['REQUEST_URI']) . '';
+
+        ?>
+</body>
+
+<!-- <footer>
+    <h2>Widzisz jakiś błąd. Wyślij nam maila.</h2>
+
+    <form action="mailto:jakub01.7@o2.pl" method="post" enctype="text/plain">
+    Imię:<br>
+    <input type="text" placeholder="Podaj Imię" name="name"><br>
+    E-mail:<br>
+    <input type="email" placeholder="Twój e-mail" name="mail"><br>
+    Komentarz:<br>
+    <textarea name="body" rows="5" cols="30" placeholder="Twoja wiadomość" id="komentarz"></textarea><br>
+    <input type="submit" value="Wyślij">
+    <input type="reset" value="Resetuj">
+    </form>
+
+</footer> -->
+</html>
