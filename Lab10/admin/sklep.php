@@ -139,9 +139,9 @@ function PokazKategorie($mother = 0, $ile = 0)
 			$brak = 1;
 			for($i=0; $i<$ile; $i++)
 			{
-					echo '&nbsp;&nbsp;&nbsp;<span style="color: #0000FF;">>>>>></span>';
+					echo '&nbsp;&nbsp;&nbsp;<span style="color: #01016f;">>>>>></span>';
 			}
-			echo ' <b><span style="color:#008000;">'.$row['id'].'</span> '.$row['nazwa'].'</b><br><br>';
+			echo ' <b><span style="color:#FF0000;">'.$row['id'].'</span> '.$row['nazwa'].'</b><br><br>';
 			PokazKategorie($row['id'], $ile+1);
 		}
 		if($brak == 0 && $ile == 0)
