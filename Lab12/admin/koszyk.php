@@ -114,7 +114,7 @@ function PokazProduktyDoWyboru()
 // funkcja wyswietlająca zawartosc koszyka
 function WyswietlKoszyk()
 {
-    echo '<div id="koszyk">';
+    echo '<div>';
     echo '<h2>Zawartość koszyka</h2>';
     $suma = 0;
 
